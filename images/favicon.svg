@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="6" fill="#1E40AF"/>
+
+  <!-- Moving truck silhouette in white -->
+  <g transform="translate(3, 7)">
+    <!-- Truck cargo body -->
+    <rect x="0" y="4" width="15" height="11" rx="1.5" fill="white"/>
+    <!-- Truck cabin -->
+    <path d="M15,7 L20,7 L23,11.5 L23,15 L15,15 Z" fill="white"/>
+    <!-- Cabin window cutout -->
+    <path d="M16,8 L19,8 L21.5,11.5 L16,11.5 Z" fill="#1E40AF" opacity="0.7"/>
+    <!-- Cargo door line -->
+    <line x1="7.5" y1="5.5" x2="7.5" y2="13.5" stroke="#1E40AF" stroke-width="0.6" opacity="0.3"/>
+    <!-- Wheels -->
+    <circle cx="5.5" cy="16.5" r="2.5" fill="white"/>
+    <circle cx="5.5" cy="16.5" r="1" fill="#1E40AF"/>
+    <circle cx="19" cy="16.5" r="2.5" fill="white"/>
+    <circle cx="19" cy="16.5" r="1" fill="#1E40AF"/>
+    <!-- Arrow on cargo body -->
+    <path d="M3,8.5 L6.5,8.5 L6.5,7 L9,9.5 L6.5,12 L6.5,10.5 L3,10.5 Z" fill="#1E40AF" opacity="0.4"/>
+  </g>
+</svg>

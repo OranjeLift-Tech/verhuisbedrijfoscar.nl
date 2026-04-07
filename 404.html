@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Pagina Niet Gevonden - Verhuisbedrijf Oscar</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .error-page {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .error-code {
+      font-family: 'Lexend', sans-serif;
+      font-size: clamp(6rem, 15vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+    }
+    .error-icon {
+      margin-bottom: 24px;
+    }
+    .error-icon svg {
+      width: 80px;
+      height: 80px;
+    }
+    .error-page h1 {
+      font-size: clamp(1.4rem, 3vw + 0.5rem, 2rem);
+      margin-bottom: 16px;
+    }
+    .error-page p {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 500px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .error-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-buttons .btn {
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      transition: all var(--transition);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .error-buttons .btn-green {
+      background: var(--green);
+      color: var(--white);
+    }
+    .error-buttons .btn-green:hover {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+    .error-buttons .btn-outline-blue {
+      background: transparent;
+      color: var(--blue);
+      border: 2px solid var(--blue);
+    }
+    .error-buttons .btn-outline-blue:hover {
+      background: var(--blue);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-left">
+          <a href="tel:0201234567">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+            020 - 123 45 67
+          </a>
+          <span>|</span>
+          <a href="mailto:info@verhuisbedrijfoscar.nl">info@verhuisbedrijfoscar.nl</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a href="/" class="logo">
+          <span class="logo-text">Verhuisbedrijf Oscar</span>
+        </a>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/diensten/">Diensten</a></li>
+            <li><a href="/over-ons/">Over ons</a></li>
+            <li><a href="/tarieven/">Tarieven</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="/contact/" class="btn btn-orange btn-sm">Offerte aanvragen</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Error Page -->
+  <main>
+    <section class="error-page">
+      <div class="error-code">404</div>
+      <div class="error-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="36" stroke="url(#compassGrad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 8"/>
+          <circle cx="40" cy="40" r="4" fill="#142993"/>
+          <path d="M40 12 L43 36 L40 40 L37 36 Z" fill="#142993" opacity="0.9"/>
+          <path d="M40 68 L43 44 L40 40 L37 44 Z" fill="#008fc3" opacity="0.7"/>
+          <path d="M12 40 L36 37 L40 40 L36 43 Z" fill="#008fc3" opacity="0.5"/>
+          <path d="M68 40 L44 37 L40 40 L44 43 Z" fill="#142993" opacity="0.6"/>
+          <text x="40" y="9" text-anchor="middle" font-size="8" font-weight="700" fill="#142993" font-family="Lexend, sans-serif">N</text>
+          <text x="40" y="78" text-anchor="middle" font-size="8" font-weight="700" fill="#666" font-family="Lexend, sans-serif">Z</text>
+          <text x="74" y="43" text-anchor="middle" font-size="8" font-weight="700" fill="#666" font-family="Lexend, sans-serif">O</text>
+          <text x="6" y="43" text-anchor="middle" font-size="8" font-weight="700" fill="#666" font-family="Lexend, sans-serif">W</text>
+          <defs>
+            <linearGradient id="compassGrad" x1="4" y1="4" x2="76" y2="76">
+              <stop offset="0%" stop-color="#142993"/>
+              <stop offset="100%" stop-color="#008fc3"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <h1>Oeps! Pagina Niet Gevonden</h1>
+      <p>De pagina die u zoekt bestaat niet of is verplaatst. Geen zorgen, wij helpen u graag verder!</p>
+      <div class="error-buttons">
+        <a href="/" class="btn btn-green">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146z"/></svg>
+          Naar Homepage
+        </a>
+        <a href="/contact/" class="btn btn-outline-blue">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/></svg>
+          Contact
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text" style="color: var(--white); font-size: 1.3rem;">Verhuisbedrijf Oscar</span>
+          <p>Uw betrouwbare verhuispartner. Professioneel, snel en voordelig verhuizen door heel Nederland.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Pagina's</div>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/diensten/">Diensten</a></li>
+            <li><a href="/over-ons/">Over ons</a></li>
+            <li><a href="/tarieven/">Tarieven</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+            <a href="tel:0201234567">020 - 123 45 67</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2z"/></svg>
+            <a href="mailto:info@verhuisbedrijfoscar.nl">info@verhuisbedrijfoscar.nl</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Verhuisbedrijf Oscar. Alle rechten voorbehouden. | <a href="/privacy/">Privacy</a> | <a href="/algemene-voorwaarden/">Algemene Voorwaarden</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

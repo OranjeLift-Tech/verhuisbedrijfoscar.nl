@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="ssBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle background -->
+  <circle cx="50" cy="50" r="48" fill="url(#ssBg)"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="white" stroke-width="0.5" opacity="0.2"/>
+  <!-- Clock face -->
+  <circle cx="46" cy="50" r="22" fill="white" opacity="0.95"/>
+  <circle cx="46" cy="50" r="20" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+  <!-- Clock hour markers -->
+  <g stroke="#1E3A8A" stroke-width="1.5" opacity="0.4">
+    <line x1="46" y1="31" x2="46" y2="34"/>
+    <line x1="46" y1="66" x2="46" y2="69"/>
+    <line x1="27" y1="50" x2="30" y2="50"/>
+    <line x1="62" y1="50" x2="65" y2="50"/>
+    <!-- Diagonal markers -->
+    <line x1="59.5" y1="36.5" x2="57.4" y2="38.6"/>
+    <line x1="32.5" y1="36.5" x2="34.6" y2="38.6"/>
+    <line x1="59.5" y1="63.5" x2="57.4" y2="61.4"/>
+    <line x1="32.5" y1="63.5" x2="34.6" y2="61.4"/>
+  </g>
+  <!-- Clock hands -->
+  <!-- Hour hand -->
+  <line x1="46" y1="50" x2="46" y2="37" stroke="#1E3A8A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="46" y1="50" x2="57" y2="42" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Center dot -->
+  <circle cx="46" cy="50" r="2" fill="#1E3A8A"/>
+  <!-- Lightning bolt -->
+  <g transform="translate(62, 34)">
+    <polygon points="4,-8 -2,2 4,0 0,10 8,0 2,2" fill="#FCD34D" stroke="#F59E0B" stroke-width="0.5"/>
+  </g>
+  <!-- Smaller accent lightning -->
+  <g transform="translate(68, 46)" opacity="0.6">
+    <polygon points="2,-5 -1,1 2,0 0,6 5,0 2,1" fill="#FCD34D" stroke="#F59E0B" stroke-width="0.3"/>
+  </g>
+  <!-- Speed lines around clock -->
+  <g stroke="#10B981" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+    <line x1="18" y1="38" x2="22" y2="40"/>
+    <line x1="16" y1="50" x2="21" y2="50"/>
+    <line x1="18" y1="62" x2="22" y2="60"/>
+  </g>
+</svg>

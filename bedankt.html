@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Bedankt - Verhuisbedrijf Oscar</title>
+    <link rel="canonical" href="https://verhuisbedrijfoscar.nl/bedankt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Thank-you page specific styles */
+        .thank-you {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 60vh;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        /* Animated checkmark */
+        .checkmark-circle {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 32px;
+        }
+
+        .checkmark-circle circle {
+            fill: none;
+            stroke: #22c55e;
+            stroke-width: 3;
+            stroke-dasharray: 283;
+            stroke-dashoffset: 283;
+            animation: circleAnim 0.6s ease-out 0.2s forwards;
+        }
+
+        .checkmark-circle path {
+            fill: none;
+            stroke: #22c55e;
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 50;
+            stroke-dashoffset: 50;
+            animation: checkAnim 0.4s ease-out 0.7s forwards;
+        }
+
+        @keyframes circleAnim {
+            to { stroke-dashoffset: 0; }
+        }
+
+        @keyframes checkAnim {
+            to { stroke-dashoffset: 0; }
+        }
+
+        .thank-you h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 0 0 16px 0;
+        }
+
+        .thank-you .message {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+            margin: 0 0 32px 0;
+        }
+
+        .thank-you .divider {
+            width: 60px;
+            height: 3px;
+            background: #22c55e;
+            border: none;
+            border-radius: 2px;
+            margin: 0 0 32px 0;
+        }
+
+        .thank-you .contact-prompt {
+            font-size: 1rem;
+            color: #333;
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .thank-you .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 36px;
+        }
+
+        .thank-you .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.05rem;
+            color: #e65100;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .thank-you .contact-links a:hover {
+            color: #bf360c;
+        }
+
+        .thank-you .contact-links svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .thank-you .btn-home {
+            display: inline-block;
+            padding: 14px 36px;
+            background: #e65100;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .thank-you .btn-home:hover {
+            background: #bf360c;
+        }
+
+        @media (max-width: 600px) {
+            .thank-you {
+                padding: 60px 16px;
+            }
+
+            .thank-you h1 {
+                font-size: 1.6rem;
+            }
+
+            .thank-you .message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">Verhuisbedrijf Oscar</a>
+            <button class="menu-toggle" aria-label="Menu openen" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" aria-label="Hoofdnavigatie">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/diensten">Diensten</a></li>
+                    <li><a href="/over-ons">Over Ons</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Thank You Section -->
+    <main>
+        <section class="thank-you">
+
+            <!-- Animated green checkmark -->
+            <svg class="checkmark-circle" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="45"/>
+                <path d="M30 52 L44 66 L70 38"/>
+            </svg>
+
+            <h1>Bedankt voor Uw Aanvraag!</h1>
+
+            <p class="message">
+                Wij hebben uw bericht goed ontvangen en nemen zo snel mogelijk
+                contact met u op. Meestal reageren wij binnen 2 werkuren.
+            </p>
+
+            <hr class="divider">
+
+            <p class="contact-prompt">
+                Heeft u een dringende vraag? Neem dan direct contact op:
+            </p>
+
+            <div class="contact-links">
+                <a href="tel:0208904567">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    020-8904567
+                </a>
+                <a href="mailto:info@verhuisbedrijfoscar.nl">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M22 4L12 13 2 4"/>
+                    </svg>
+                    info@verhuisbedrijfoscar.nl
+                </a>
+            </div>
+
+            <a href="/" class="btn-home">Terug naar Homepage</a>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Verhuisbedrijf Oscar</h3>
+                    <p>Uw betrouwbare verhuispartner in Amsterdam en omstreken.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:0208904567">020-8904567</a></li>
+                        <li><a href="mailto:info@verhuisbedrijfoscar.nl">info@verhuisbedrijfoscar.nl</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Navigatie</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/diensten">Diensten</a></li>
+                        <li><a href="/over-ons">Over Ons</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Verhuisbedrijf Oscar. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
