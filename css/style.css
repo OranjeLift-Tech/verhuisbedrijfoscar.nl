@@ -7,14 +7,14 @@
    1. CSS CUSTOM PROPERTIES (Design Tokens)
    ============================================================ */
 :root {
-  /* Color Palette */
-  --primary: #1E40AF;
-  --primary-light: #3B82F6;
-  --primary-dark: #1E3A8A;
-  --secondary: #059669;
-  --secondary-light: #10B981;
-  --secondary-dark: #047857;
-  --accent: #06B6D4;
+  /* Color Palette - matched to logo */
+  --primary: #1B75BB;
+  --primary-light: #2A8FD4;
+  --primary-dark: #0D4E8B;
+  --secondary: #3AAA35;
+  --secondary-light: #5CBF3A;
+  --secondary-dark: #2D8A29;
+  --accent: #7EC636;
   --dark: #0F172A;
   --dark-secondary: #1E293B;
   --text: #0F172A;
@@ -230,7 +230,7 @@ button {
   color: var(--secondary);
   margin-bottom: var(--sp-md);
   padding: var(--sp-xs) var(--sp-md);
-  background: rgba(5, 150, 105, 0.08);
+  background: rgba(58, 170, 53, 0.08);
   border-radius: var(--radius-full);
 }
 
@@ -276,12 +276,12 @@ button {
 }
 
 .badge--green {
-  background: rgba(5, 150, 105, 0.12);
+  background: rgba(58, 170, 53, 0.12);
   color: var(--secondary);
 }
 
 .badge--blue {
-  background: rgba(30, 64, 175, 0.1);
+  background: rgba(27, 117, 187, 0.1);
   color: var(--primary);
 }
 
@@ -393,12 +393,12 @@ button {
   background: var(--secondary-dark);
   border-color: var(--secondary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 8px 24px rgba(58, 170, 53, 0.35);
 }
 
 .btn-primary:active {
   transform: translateY(0);
-  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+  box-shadow: 0 4px 12px rgba(58, 170, 53, 0.25);
 }
 
 /* Secondary Button (Blue) */
@@ -412,12 +412,12 @@ button {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(30, 64, 175, 0.35);
+  box-shadow: 0 8px 24px rgba(27, 117, 187, 0.35);
 }
 
 .btn-secondary:active {
   transform: translateY(0);
-  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+  box-shadow: 0 4px 12px rgba(27, 117, 187, 0.25);
 }
 
 /* Outline Button */
@@ -431,7 +431,7 @@ button {
   background: var(--primary);
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(30, 64, 175, 0.25);
+  box-shadow: 0 8px 24px rgba(27, 117, 187, 0.25);
 }
 
 .btn-outline:active {
@@ -531,7 +531,7 @@ button {
   border-radius: 0;
   background: var(--primary);
   border-color: transparent;
-  box-shadow: 0 4px 24px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 4px 24px rgba(27, 117, 187, 0.3);
   backdrop-filter: none;
 }
 
@@ -771,7 +771,7 @@ button {
   right: -120px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(126, 198, 54, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
@@ -837,7 +837,7 @@ button {
   left: 0;
   width: 100%;
   height: 6px;
-  background: rgba(16, 185, 129, 0.3);
+  background: rgba(92, 191, 58, 0.3);
   border-radius: 3px;
 }
 
@@ -1277,7 +1277,7 @@ button {
   font-size: var(--fs-xl);
   font-weight: 800;
   margin-bottom: var(--sp-lg);
-  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 4px 16px rgba(27, 117, 187, 0.3);
   position: relative;
 }
 
@@ -1287,7 +1287,7 @@ button {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  border: 2px dashed rgba(30, 64, 175, 0.2);
+  border: 2px dashed rgba(27, 117, 187, 0.2);
   top: -8px;
   left: -8px;
 }
@@ -1525,7 +1525,7 @@ button {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(30, 64, 175, 0.03) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(27, 117, 187, 0.03) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -1565,9 +1565,9 @@ button {
 
 /* Blue tags for Randstad */
 .coverage__tag--randstad {
-  background: rgba(30, 64, 175, 0.08);
+  background: rgba(27, 117, 187, 0.08);
   color: var(--primary);
-  border: 1px solid rgba(30, 64, 175, 0.15);
+  border: 1px solid rgba(27, 117, 187, 0.15);
 }
 
 .coverage__tag--randstad:hover {
@@ -1575,14 +1575,14 @@ button {
   color: var(--white);
   border-color: var(--primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+  box-shadow: 0 4px 12px rgba(27, 117, 187, 0.25);
 }
 
 /* Green tags for other areas */
 .coverage__tag--other {
-  background: rgba(5, 150, 105, 0.08);
+  background: rgba(58, 170, 53, 0.08);
   color: var(--secondary);
-  border: 1px solid rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(58, 170, 53, 0.15);
 }
 
 .coverage__tag--other:hover {
@@ -1590,7 +1590,7 @@ button {
   color: var(--white);
   border-color: var(--secondary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+  box-shadow: 0 4px 12px rgba(58, 170, 53, 0.25);
 }
 
 .coverage__tag i {
@@ -1659,7 +1659,7 @@ button {
 }
 
 .faq__question:hover {
-  background: rgba(5, 150, 105, 0.03);
+  background: rgba(58, 170, 53, 0.03);
 }
 
 .faq__question-icon {
@@ -1850,7 +1850,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(5, 150, 105, 0.65);
+  background: rgba(58, 170, 53, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2866,7 +2866,7 @@ button {
 
 .pricing-card--featured {
   border-color: var(--secondary);
-  background: linear-gradient(180deg, rgba(5, 150, 105, 0.03) 0%, var(--white) 100%);
+  background: linear-gradient(180deg, rgba(58, 170, 53, 0.03) 0%, var(--white) 100%);
 }
 
 .pricing-card--featured::before {
@@ -3046,9 +3046,9 @@ button {
 }
 
 .alert--info {
-  background: rgba(6, 182, 212, 0.1);
+  background: rgba(126, 198, 54, 0.1);
   color: #164e63;
-  border: 1px solid rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(126, 198, 54, 0.2);
 }
 
 
@@ -3093,7 +3093,7 @@ button {
 }
 
 .table tbody tr:hover {
-  background: rgba(30, 64, 175, 0.03);
+  background: rgba(27, 117, 187, 0.03);
 }
 
 
@@ -4252,12 +4252,12 @@ button {
    43. CUSTOM SELECTION COLORS
    ============================================================ */
 ::selection {
-  background: rgba(30, 64, 175, 0.2);
+  background: rgba(27, 117, 187, 0.2);
   color: var(--primary-dark);
 }
 
 ::-moz-selection {
-  background: rgba(30, 64, 175, 0.2);
+  background: rgba(27, 117, 187, 0.2);
   color: var(--primary-dark);
 }
 
