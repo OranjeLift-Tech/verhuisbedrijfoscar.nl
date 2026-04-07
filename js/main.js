@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ------------------------------------------
      1. MOBILE MENU (hamburger toggle)
      ------------------------------------------ */
-  const hamburger = document.querySelector('.hamburger');
+  const hamburger = document.querySelector('.header__hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
   const mobileNavLinks = mobileNav ? mobileNav.querySelectorAll('a') : [];
 
@@ -283,8 +283,8 @@ document.addEventListener('DOMContentLoaded', () => {
      5. COOKIE BANNER
      ------------------------------------------ */
   const cookieBanner = document.getElementById('cookie-banner');
-  const cookieAcceptBtn = cookieBanner ? cookieBanner.querySelector('.cookie-accept') : null;
-  const cookieDeclineBtn = cookieBanner ? cookieBanner.querySelector('.cookie-decline') : null;
+  const cookieAcceptBtn = cookieBanner ? cookieBanner.querySelector('#cookie-accept') : null;
+  const cookieDeclineBtn = cookieBanner ? cookieBanner.querySelector('#cookie-reject') : null;
 
   function hideCookieBanner() {
     if (!cookieBanner) return;
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ------------------------------------------
      7. STATS COUNTER ANIMATION
      ------------------------------------------ */
-  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+  const statNumbers = document.querySelectorAll('.stat-item__number[data-target]');
 
   function animateCounter(element) {
     const target = parseFloat(element.dataset.target);
@@ -417,57 +417,37 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ------------------------------------------
      8. FAQ ACCORDION
      ------------------------------------------ */
-  const faqItems = document.querySelectorAll('.faq-item');
+  const faqItems = document.querySelectorAll('.faq__item');
 
   faqItems.forEach((item) => {
-    const summary = item.querySelector('summary');
-    if (!summary) return;
+    const question = item.querySelector('.faq__question');
+    const answer = item.querySelector('.faq__answer');
+    if (!question || !answer) return;
 
-    item.addEventListener('toggle', () => {
-      if (item.open) {
-        // Close all other FAQ items
-        faqItems.forEach((other) => {
-          if (other !== item && other.open) {
-            other.removeAttribute('open');
-          }
-        });
-      }
-    });
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
 
-    // Smooth height animation on click
-    summary.addEventListener('click', (e) => {
-      e.preventDefault();
+      // Close all other FAQ items
+      faqItems.forEach((other) => {
+        if (other !== item && other.classList.contains('active')) {
+          other.classList.remove('active');
+          const otherAnswer = other.querySelector('.faq__answer');
+          if (otherAnswer) otherAnswer.style.maxHeight = '0px';
+          const otherBtn = other.querySelector('.faq__question');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
 
-      const content = item.querySelector('.faq-answer');
-      if (!content) {
-        // Fallback if there is no .faq-answer wrapper
-        item.open = !item.open;
-        return;
-      }
-
-      if (item.open) {
-        // Closing animation
-        content.style.maxHeight = content.scrollHeight + 'px';
-        requestAnimationFrame(() => {
-          content.style.maxHeight = '0px';
-        });
-        content.addEventListener('transitionend', function handler() {
-          item.removeAttribute('open');
-          content.style.maxHeight = '';
-          content.removeEventListener('transitionend', handler);
-        }, { once: true });
+      if (isActive) {
+        // Close this item
+        item.classList.remove('active');
+        answer.style.maxHeight = '0px';
+        question.setAttribute('aria-expanded', 'false');
       } else {
-        // Opening animation
-        item.setAttribute('open', '');
-        const height = content.scrollHeight;
-        content.style.maxHeight = '0px';
-        requestAnimationFrame(() => {
-          content.style.maxHeight = height + 'px';
-        });
-        content.addEventListener('transitionend', function handler() {
-          content.style.maxHeight = '';
-          content.removeEventListener('transitionend', handler);
-        }, { once: true });
+        // Open this item
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        question.setAttribute('aria-expanded', 'true');
       }
     });
   });
