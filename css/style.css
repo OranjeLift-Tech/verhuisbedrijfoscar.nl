@@ -742,7 +742,7 @@ button {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(155deg, var(--dark) 0%, var(--primary-dark) 50%, var(--primary) 100%);
+  background: linear-gradient(155deg, rgba(15,23,42,0.85) 0%, rgba(13,78,139,0.8) 50%, rgba(27,117,187,0.75) 100%), url('/images/hero-main.jpg') center/cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
   overflow: hidden;
   padding-top: 100px;
