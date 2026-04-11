@@ -1,0 +1,10 @@
+.env
+.DS_Store
+images/nieuwe-fotos/
+__pycache__/
+
+# Local dev helpers (niet in productie)
+dev-server.py
+generate-images.py
+generate-images-v3.py
+generate-images-v4.py

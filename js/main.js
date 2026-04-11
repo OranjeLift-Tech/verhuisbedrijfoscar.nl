@@ -3,6 +3,15 @@
    Vanilla ES6 | No dependencies
    ============================================ */
 
+/* Service Worker registration (PWA offline support) */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {
+      /* registration failed – non-fatal */
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ------------------------------------------
@@ -153,15 +162,21 @@ document.addEventListener('DOMContentLoaded', () => {
   function showError(field, message) {
     clearError(field);
     field.classList.add('invalid');
+    field.setAttribute('aria-invalid', 'true');
 
     const errorSpan = document.createElement('span');
     errorSpan.className = 'error-message';
+    errorSpan.setAttribute('role', 'alert');
+    errorSpan.id = (field.id || 'field') + '-error';
     errorSpan.textContent = message;
     field.parentNode.insertBefore(errorSpan, field.nextSibling);
+    field.setAttribute('aria-describedby', errorSpan.id);
   }
 
   function clearError(field) {
     field.classList.remove('invalid');
+    field.removeAttribute('aria-invalid');
+    field.removeAttribute('aria-describedby');
     const existing = field.parentNode.querySelector('.error-message');
     if (existing) {
       existing.remove();
@@ -257,15 +272,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Submit validation
     form.addEventListener('submit', (e) => {
       let isValid = true;
+      let errorCount = 0;
 
       fields.forEach((field) => {
         if (!validateField(field)) {
           isValid = false;
+          errorCount++;
         }
       });
 
+      const statusRegion = form.querySelector('#form-status');
+
       if (!isValid) {
         e.preventDefault();
+
+        // Announce error count to screen readers
+        if (statusRegion) {
+          statusRegion.textContent =
+            errorCount === 1
+              ? 'Het formulier bevat 1 fout. Controleer het rood gemarkeerde veld.'
+              : 'Het formulier bevat ' + errorCount + ' fouten. Controleer de rood gemarkeerde velden.';
+        }
 
         // Scroll to first error
         const firstError = form.querySelector('.invalid');
@@ -273,6 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
           firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
           firstError.focus();
         }
+      } else if (statusRegion) {
+        statusRegion.textContent = 'Formulier wordt verzonden…';
       }
       // If valid, form submits naturally (Web3Forms handles it)
     });
@@ -460,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   phoneLinks.forEach((link) => {
     link.addEventListener('click', () => {
-      console.log('Phone click tracked: ' + link.getAttribute('href'));
+      // Phone click tracking hook (no-op in production)
     });
   });
 
@@ -560,5 +589,60 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+
+  /* ------------------------------------------
+     13. NAVIGATION DROPDOWN
+     ------------------------------------------ */
+  const dropdownBtn = document.querySelector('.header__nav-link--has-dropdown');
+  const dropdownParent = document.querySelector('.header__nav-dropdown');
+
+  if (dropdownBtn && dropdownParent) {
+    // Toggle on click (for touch devices and accessibility)
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdownParent.classList.contains('open');
+      dropdownParent.classList.toggle('open');
+      dropdownBtn.setAttribute('aria-expanded', !isOpen);
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownParent.contains(e.target)) {
+        dropdownParent.classList.remove('open');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dropdownParent.classList.contains('open')) {
+        dropdownParent.classList.remove('open');
+        dropdownBtn.setAttribute('aria-expanded', 'false');
+        dropdownBtn.focus();
+      }
+    });
+  }
+
+
+  /* ------------------------------------------
+     GALLERY MARQUEE — duplicate items for seamless loop
+     ------------------------------------------ */
+  const marqueeTracks = document.querySelectorAll('[data-marquee-track]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  marqueeTracks.forEach((track) => {
+    if (reduceMotion) return; // CSS handles fallback (manual horizontal scroll)
+    const originals = Array.from(track.children);
+    // Clone each item once; translateX(-50%) in the keyframe assumes exactly 2x content
+    originals.forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      clone.querySelectorAll('img').forEach((img) => {
+        img.setAttribute('aria-hidden', 'true');
+      });
+      track.appendChild(clone);
+    });
+  });
 
 });

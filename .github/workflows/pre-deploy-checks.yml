@@ -1,0 +1,70 @@
+name: Pre-deploy checks
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  asset-path-check:
+    name: Check asset paths
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Detect relative asset paths in HTML
+        run: |
+          echo "Scanning HTML files for relative asset paths..."
+          # Flag src="images/... or href="css/... or src="js/... (without leading slash)
+          BAD=$(grep -rEn '(src|href)="(images|css|js|fonts)/' --include="*.html" . || true)
+          if [ -n "$BAD" ]; then
+            echo "Found relative asset paths (must start with /):"
+            echo "$BAD"
+            exit 1
+          fi
+          echo "All asset paths are absolute. OK."
+
+  image-size-check:
+    name: Check image sizes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Find images larger than 500KB
+        run: |
+          echo "Scanning images/ for files > 500KB..."
+          LARGE_FILES=$(find images -type f -size +500k 2>/dev/null || true)
+          if [ -n "$LARGE_FILES" ]; then
+            echo "WARNING: Found images larger than 500KB:"
+            echo "$LARGE_FILES"
+            echo ""
+            echo "Consider optimizing these with WebP/AVIF or compression."
+            # Non-blocking: warning only
+          else
+            echo "All images are under 500KB. OK."
+          fi
+
+  html-validate:
+    name: HTML basic validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install html-validate
+        run: npm install --no-save html-validate
+
+      - name: Run html-validate
+        run: |
+          npx html-validate "*.html" || true
+          echo "HTML validation completed (non-blocking)."

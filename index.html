@@ -2,18 +2,18 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verhuisbedrijf Oscar | Zorgeloos Verhuizen in Amsterdam en de Randstad</title>
-    <meta name="description" content="Verhuisbedrijf Oscar is uw betrouwbare verhuispartner in Amsterdam en de Randstad. Particuliere en zakelijke verhuizingen, inpakservice en spoedverhuizingen. Vraag gratis offerte aan.">
-    <meta name="keywords" content="verhuisbedrijf amsterdam, verhuizen amsterdam, verhuisservice randstad, verhuisbedrijf oscar, verhuizing amsterdam, goedkoop verhuizen, zakelijke verhuizing, inpakservice amsterdam">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Verhuisbedrijf Den Haag | Oscar - Zorgeloos Verhuizen</title>
+    <meta name="description" content="Verhuisbedrijf Den Haag Oscar: gecertificeerde verhuizers met 4.9 sterren, verzekerd transport, transparante verhuiskosten. Vraag nu gratis offerte aan.">
+    <meta name="keywords" content="verhuisbedrijf den haag, verhuiskosten, verhuisservice randstad, verhuisbedrijf oscar, gratis offerte verhuizing, goedkoop verhuizen, zakelijke verhuizing, inpakservice den haag">
     <meta name="author" content="Verhuisbedrijf Oscar">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://verhuisbedrijfoscar.nl">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Verhuisbedrijf Oscar | Zorgeloos Verhuizen in Amsterdam">
-    <meta property="og:description" content="Betrouwbaar verhuisbedrijf in Amsterdam en de Randstad. 500+ verhuizingen, 4.9 sterren op Google. Vraag vandaag nog een gratis offerte aan.">
+    <meta property="og:title" content="Verhuisbedrijf Den Haag | Oscar - Zorgeloos Verhuizen">
+    <meta property="og:description" content="Betrouwbaar verhuisbedrijf in Den Haag en de Randstad. 500+ verhuizingen, 4.9 sterren op Google. Vraag vandaag nog een gratis offerte aan.">
     <meta property="og:url" content="https://verhuisbedrijfoscar.nl">
     <meta property="og:site_name" content="Verhuisbedrijf Oscar">
     <meta property="og:locale" content="nl_NL">
@@ -23,18 +23,24 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Verhuisbedrijf Oscar | Zorgeloos Verhuizen in Amsterdam">
-    <meta name="twitter:description" content="Betrouwbaar verhuisbedrijf in Amsterdam en de Randstad. Vraag vandaag nog een gratis offerte aan.">
+    <meta name="twitter:title" content="Verhuisbedrijf Den Haag | Oscar - Zorgeloos Verhuizen">
+    <meta name="twitter:description" content="Betrouwbaar verhuisbedrijf in Den Haag en de Randstad. Vraag vandaag nog een gratis offerte aan.">
     <meta name="twitter:image" content="https://verhuisbedrijfoscar.nl/images/og-image.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1B75BB">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- LCP hero image preload -->
+    <link rel="preload" as="image" href="/images/fotos/28-oscar-selfie-met-klant.webp" fetchpriority="high">
 
     <!-- Critical CSS -->
     <style>
@@ -45,9 +51,12 @@
     </style>
 
     <!-- Main Stylesheet (synchronous) -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+    <!-- Skip to main content (WCAG 2.4.1 Bypass Blocks) -->
+    <a href="#main-content" class="skip-link">Direct naar hoofdinhoud</a>
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookiemelding" aria-hidden="false">
@@ -65,19 +74,55 @@
     <header class="header" id="header" role="banner">
         <div class="header__inner">
             <a href="/" class="header__logo" aria-label="Verhuisbedrijf Oscar - Terug naar homepagina">
-                <img src="/images/logo.png" alt="Verhuisbedrijf Oscar" width="220" height="65" style="height:65px;width:auto;object-fit:contain;">
+                <img src="/images/logo-horizontaal.png" alt="Verhuisbedrijf Oscar" width="200" height="52">
             </a>
 
             <nav class="header__nav" aria-label="Hoofdnavigatie">
-                <a href="#home" class="header__nav-link active">Home</a>
-                <a href="#diensten" class="header__nav-link">Diensten</a>
-                <a href="#werkwijze" class="header__nav-link">Werkwijze</a>
-                <a href="#over-ons" class="header__nav-link">Over Ons</a>
-                <a href="#contact" class="header__nav-link">Contact</a>
+                <a href="/" class="header__nav-link active">Home</a>
+                <a href="/over-ons" class="header__nav-link">Over Ons</a>
+                <div class="header__nav-dropdown">
+                    <button type="button" class="header__nav-link--has-dropdown" aria-expanded="false" aria-haspopup="true">
+                        Diensten
+                        <svg class="dropdown-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="header__dropdown-menu">
+                        <a href="/particuliere-verhuizing" class="header__dropdown-link">
+                            <div class="dropdown-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            </div>
+                            <div class="header__dropdown-link-text">
+                                <span>Particuliere Verhuizing</span>
+                                <small>Woning- en inboedelverhuizing</small>
+                            </div>
+                        </a>
+                        <a href="/zakelijke-verhuizing" class="header__dropdown-link">
+                            <div class="dropdown-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+                            </div>
+                            <div class="header__dropdown-link-text">
+                                <span>Zakelijke Verhuizing</span>
+                                <small>Kantoor- en bedrijfsverhuizing</small>
+                            </div>
+                        </a>
+                        <a href="/spoedverhuizing" class="header__dropdown-link">
+                            <div class="dropdown-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div class="header__dropdown-link-text">
+                                <span>Spoedverhuizing</span>
+                                <small>Snel en flexibel verhuizen</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="/werkwijze" class="header__nav-link">Werkwijze</a>
+                <a href="/prijs" class="header__nav-link">Prijzen</a>
+                <a href="/m3-calculator" class="header__nav-link">M3 Calculator</a>
+                <a href="/contact" class="header__nav-link">Contact</a>
             </nav>
 
             <div class="header__cta">
-                <a href="#offerte-form" class="btn btn-primary">Gratis Offerte</a>
+                <a href="/contact#contact-form" class="btn btn-primary">Gratis Offerte</a>
             </div>
 
             <div class="header__hamburger" id="hamburger-btn" role="button" tabindex="0" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-nav">
@@ -89,22 +134,29 @@
 
         <!-- Mobile Nav Overlay -->
         <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Mobiel navigatiemenu">
-            <a href="#home" class="mobile-nav__link">Home</a>
-            <a href="#diensten" class="mobile-nav__link">Diensten</a>
-            <a href="#werkwijze" class="mobile-nav__link">Werkwijze</a>
-            <a href="#over-ons" class="mobile-nav__link">Over Ons</a>
-            <a href="#contact" class="mobile-nav__link">Contact</a>
+            <a href="/" class="mobile-nav__link">Home</a>
+            <a href="/over-ons" class="mobile-nav__link">Over Ons</a>
+            <div class="mobile-nav__group">
+                <span class="mobile-nav__group-title">Diensten</span>
+                <a href="/particuliere-verhuizing" class="mobile-nav__link mobile-nav__link--sub">Particuliere Verhuizing</a>
+                <a href="/zakelijke-verhuizing" class="mobile-nav__link mobile-nav__link--sub">Zakelijke Verhuizing</a>
+                <a href="/spoedverhuizing" class="mobile-nav__link mobile-nav__link--sub">Spoedverhuizing</a>
+            </div>
+            <a href="/werkwijze" class="mobile-nav__link">Werkwijze</a>
+            <a href="/prijs" class="mobile-nav__link">Prijzen</a>
+            <a href="/m3-calculator" class="mobile-nav__link">M3 Calculator</a>
+            <a href="/contact" class="mobile-nav__link">Contact</a>
             <div class="mobile-nav__cta">
-                <a href="#offerte-form" class="btn btn-primary btn-large">Gratis Offerte Aanvragen</a>
-                <a href="tel:0208904567" class="mobile-nav__phone">
+                <a href="/contact#contact-form" class="btn btn-primary btn-large">Gratis Offerte Aanvragen</a>
+                <a href="tel:0618963271" class="mobile-nav__phone">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    020-8904567
+                    06-18963271
                 </a>
             </div>
         </div>
     </header>
 
-    <main id="home">
+    <main id="main-content" tabindex="-1">
 
         <!-- Hero Section -->
         <section class="hero" aria-labelledby="hero-heading">
@@ -113,21 +165,21 @@
                     <div class="hero__content">
                         <span class="hero__badge">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                            Erkend verhuisbedrijf Amsterdam
+                            Bekend verhuisbedrijf Den Haag - 4.9 sterren
                         </span>
 
-                        <h1 class="hero__title" id="hero-heading">Zorgeloos Verhuizen in Amsterdam en de Randstad</h1>
+                        <h1 class="hero__title" id="hero-heading">Verhuisbedrijf Den Haag - Zorgeloos Verhuizen in de Randstad</h1>
 
-                        <p class="hero__subtitle">Verhuisbedrijf Oscar staat al meer dan 15 jaar klaar voor een vlotte en betaalbare verhuizing. Van inpakken tot uitladen, wij regelen het van A tot Z zodat u nergens naar om hoeft te kijken.</p>
+                        <p class="hero__subtitle">Oscar is uw gecertificeerde verhuispartner in Den Haag. Al meer dan 15 jaar verzorgen onze ervaren verhuizers een vlotte en betaalbare verhuizing, inclusief verzekerd transport, inboedelverzekering en het demonteren en monteren van uw meubels. Van inpakken tot uitladen, ons team regelt het van A tot Z.</p>
 
                         <div class="hero__buttons">
-                            <a href="#offerte-form" class="btn btn-primary btn-large">
+                            <a href="/contact#contact-form" class="btn btn-primary btn-large">
                                 Vraag Gratis Offerte
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                             </a>
-                            <a href="tel:0208904567" class="btn btn-outline-white">
+                            <a href="tel:0618963271" class="btn btn-outline-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                Bel Direct: 020-8904567
+                                Bel Direct: 06-18963271
                             </a>
                         </div>
 
@@ -147,67 +199,6 @@
                         </div>
                     </div>
 
-                    <div class="hero__form-wrapper">
-                        <div class="hero__form-decoration" aria-hidden="true"></div>
-                        <div class="hero__form-card">
-                            <h2 class="hero__form-title">Ontvang Gratis Offerte</h2>
-                            <p class="hero__form-subtitle">Binnen 24 uur een reactie</p>
-                            <form id="offerte-form" class="hero__form" action="https://api.web3forms.com/submit" method="POST" novalidate>
-                                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                                <input type="hidden" name="subject" value="Nieuwe Offerte Aanvraag - Verhuisbedrijf Oscar">
-                                <input type="hidden" name="from_name" value="Verhuisbedrijf Oscar Website">
-                                <input type="hidden" name="redirect" value="https://verhuisbedrijfoscar.nl/bedankt">
-                                <!-- Honeypot spam protection -->
-                                <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
-
-                                <div class="form-group">
-                                    <label class="form-label" for="naam">Naam <span aria-hidden="true">*</span></label>
-                                    <input type="text" id="naam" name="naam" class="form-input" placeholder="Uw volledige naam" required autocomplete="name">
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="form-label" for="email">E-mailadres <span aria-hidden="true">*</span></label>
-                                    <input type="email" id="email" name="email" class="form-input" placeholder="uw@email.nl" required autocomplete="email">
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="form-label" for="telefoon">Telefoon <span aria-hidden="true">*</span></label>
-                                    <input type="tel" id="telefoon" name="telefoon" class="form-input" placeholder="06 12345678" required autocomplete="tel">
-                                </div>
-
-                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-                                    <div class="form-group">
-                                        <label class="form-label" for="van-postcode">Van Postcode</label>
-                                        <input type="text" id="van-postcode" name="van_postcode" class="form-input" placeholder="1015 AA" autocomplete="postal-code">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label" for="naar-postcode">Naar Postcode</label>
-                                        <input type="text" id="naar-postcode" name="naar_postcode" class="form-input" placeholder="1017 BB">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="form-label" for="verhuisdatum">Verhuisdatum</label>
-                                    <input type="date" id="verhuisdatum" name="verhuisdatum" class="form-input">
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="form-label" for="omschrijving">Omschrijving</label>
-                                    <textarea id="omschrijving" name="omschrijving" class="form-textarea" rows="3" placeholder="Beschrijf kort uw verhuizing (bijv. aantal kamers, bijzondere items)"></textarea>
-                                </div>
-
-                                <div class="form-group form-check">
-                                    <input type="checkbox" id="privacy-akkoord" name="privacy_akkoord" required>
-                                    <label for="privacy-akkoord">Ik ga akkoord met het <a href="/privacy" target="_blank" rel="noopener">privacybeleid</a> <span aria-hidden="true">*</span></label>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-block">
-                                    Verstuur Aanvraag
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -230,7 +221,7 @@
                         </div>
                         <h3 class="service-card__title">Particuliere Verhuizing</h3>
                         <p class="service-card__text">Of het nu een studio of een heel gezinshuis is, wij verhuizen uw inboedel vakkundig en met zorg. Van het inpakken van fragiele items tot het veilig transporteren van grote meubels.</p>
-                        <a href="#contact" class="service-card__link">
+                        <a href="/particuliere-verhuizing" class="service-card__link">
                             Meer Info
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
@@ -247,7 +238,7 @@
                         </div>
                         <h3 class="service-card__title">Zakelijke Verhuizing</h3>
                         <p class="service-card__text">Minimale downtime voor uw bedrijf. Wij verhuizen kantoren, werkplekken en bedrijfsinventaris effici&#235;nt, desgewenst buiten kantooruren zodat u snel weer operationeel bent.</p>
-                        <a href="#contact" class="service-card__link">
+                        <a href="/zakelijke-verhuizing" class="service-card__link">
                             Meer Info
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
@@ -262,7 +253,7 @@
                         </div>
                         <h3 class="service-card__title">Spoedverhuizing</h3>
                         <p class="service-card__text">Moet u op korte termijn verhuizen? Geen probleem. Ons team is flexibel inzetbaar en kan vaak nog dezelfde week, of zelfs dezelfde dag, uw verhuizing realiseren.</p>
-                        <a href="#contact" class="service-card__link">
+                        <a href="/spoedverhuizing" class="service-card__link">
                             Meer Info
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
@@ -277,7 +268,7 @@
                 <div class="why-oscar__grid">
                     <div class="why-oscar__image">
                         <div class="why-oscar__image-wrapper" role="img" aria-label="Verhuisteam van Verhuisbedrijf Oscar aan het werk">
-                            <img src="/images/why-oscar-photo.jpg" alt="Verhuisteam van Verhuisbedrijf Oscar aan het werk" width="560" height="480" loading="lazy">
+                            <img src="/images/fotos/24-oscar-team-briefing.webp" alt="Verhuisteam van Verhuisbedrijf Oscar aan het werk" width="560" height="480" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="why-oscar__content">
@@ -339,6 +330,23 @@
             </div>
         </section>
 
+        <!-- Fleet / Equipment Section -->
+        <section class="section-padding" aria-labelledby="vloot-heading">
+            <div class="container">
+                <div class="about-block about-block--reversed">
+                    <div class="about-block__image">
+                        <img src="/images/fotos/33-depot-fleet.webp" alt="Verhuiswagens van Verhuisbedrijf Oscar op het depot in Den Haag" width="600" height="400" loading="lazy" decoding="async">
+                    </div>
+                    <div class="about-block__content">
+                        <span class="section-tag">Onze Vloot</span>
+                        <h2 id="vloot-heading">Modern Wagenpark Voor Elke Verhuizing</h2>
+                        <p>Of u nu een studio of een complete eengezinswoning wilt verhuizen, wij hebben altijd het juiste voertuig paraat. Ons wagenpark bestaat uit kleine bestelbussen voor studio's en appartementen, tot grote bakwagens met laadklep voor complete inboedels en zware meubels. Alle voertuigen worden regelmatig onderhouden en zijn uitgerust met professionele verhuisdekens, spanbanden en kantelbeveiliging.</p>
+                        <p>Zo weet u zeker dat uw spullen veilig en efficient op de nieuwe plek aankomen, zonder onverwachte extra ritten of vertraging op de verhuisdag.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Process Section -->
         <section class="process section-padding" id="werkwijze" aria-labelledby="werkwijze-heading">
             <div class="container">
@@ -375,6 +383,23 @@
                             <h3 class="process__step-title">Oplevering</h3>
                             <p class="process__step-text">Alles netjes op zijn plek in uw nieuwe woning of kantoor. Pas als u tevreden bent, ronden wij de klus af.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planning / Checklist Section -->
+        <section class="section-padding" aria-labelledby="planning-heading">
+            <div class="container">
+                <div class="about-block">
+                    <div class="about-block__image">
+                        <img src="/images/fotos/22-moving-checklist.webp" alt="Verhuischecklist en planning door Verhuisbedrijf Oscar" width="600" height="400" loading="lazy" decoding="async">
+                    </div>
+                    <div class="about-block__content">
+                        <span class="section-tag">Planning</span>
+                        <h2 id="planning-heading">Goede Voorbereiding, Zorgeloze Verhuisdag</h2>
+                        <p>Een geslaagde verhuizing begint bij een duidelijke planning. Tijdens de inventarisatie brengen wij samen met u precies in kaart wat er mee moet, welke items extra aandacht nodig hebben en welke route het beste werkt. U ontvangt een persoonlijke verhuischecklist zodat u niets vergeet: van het doorgeven van uw adreswijziging tot het afmelden bij nutsbedrijven.</p>
+                        <p>Op de verhuisdag zelf verloopt alles volgens schema. U weet vooraf precies hoe laat ons team arriveert en wanneer u in de nieuwe woning kunt beginnen met uitpakken.</p>
                     </div>
                 </div>
             </div>
@@ -423,13 +448,13 @@
                         </div>
                         <svg class="testimonial-card__quote-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
                         <blockquote class="testimonial-card__text">
-                            <p>Oscar en zijn team hebben ons fantastisch geholpen met onze verhuizing naar Amsterdam-Zuid. Alles was perfect geregeld!</p>
+                            <p>Oscar en zijn team hebben ons fantastisch geholpen met onze verhuizing naar Den Haag-Scheveningen. Alles was perfect geregeld en ook via WhatsApp snel bereikbaar!</p>
                         </blockquote>
                         <div class="testimonial-card__author">
                             <div class="testimonial-card__avatar-placeholder" aria-hidden="true">M</div>
                             <div>
                                 <div class="testimonial-card__name">Maria de Vries</div>
-                                <div class="testimonial-card__location">Amsterdam</div>
+                                <div class="testimonial-card__location">Den Haag</div>
                             </div>
                         </div>
                     </article>
@@ -479,19 +504,36 @@
             </div>
         </section>
 
+        <!-- Den Haag Expertise Section -->
+        <section class="section-padding" aria-labelledby="denhaag-heading">
+            <div class="container">
+                <div class="about-block about-block--reversed">
+                    <div class="about-block__image">
+                        <img src="/images/fotos/15-twee-trucks-zij-aan-zij.webp" alt="Twee verhuiswagens van Verhuisbedrijf Oscar in een smalle straat in Den Haag" width="600" height="400" loading="lazy" decoding="async">
+                    </div>
+                    <div class="about-block__content">
+                        <span class="section-tag">Den Haag Expertise</span>
+                        <h2 id="denhaag-heading">Specialist In Historische Panden en Smalle Straten</h2>
+                        <p>Verhuizen in Den Haag vraagt om ervaring. De smalle trappen in Archipelbuurt en Zeeheldenkwartier, krappe straten rond het Statenkwartier, eenrichtingsverkeer in het Centrum en strenge parkeerregels zijn voor ons dagelijkse kost. Wij regelen vooraf de benodigde ontheffingen en parkeervergunningen bij de gemeente zodat onze wagen pal voor de deur kan staan. Verzekerd transport en een volledige inboedelverzekering horen daar vanzelfsprekend bij.</p>
+                        <p>Voor bovenwoningen waar meubels niet door het trappenhuis passen, werken wij samen met vertrouwde verhuisliftpartners en verzorgen we het demonteren en monteren van uw meubels ter plaatse. Zo wordt ook die lastige derde verdieping zonder kleerscheuren verhuisd - een aanpak die onze klanten consequent belonen met 5-sterren beoordelingen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Coverage Area Section -->
         <section class="coverage section-padding" aria-labelledby="werkgebied-heading">
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Werkgebied</span>
                     <h2 id="werkgebied-heading">Actief in de Hele Randstad</h2>
-                    <p>Verhuisbedrijf Oscar is actief in Amsterdam en de wijde omgeving. Waar u ook naartoe verhuist binnen de Randstad, wij staan voor u klaar.</p>
+                    <p>Vanuit Den Haag rijden de verhuizers van Oscar dagelijks door de wijde omgeving. Waar u ook naartoe verhuist binnen de Randstad, ons team staat voor u klaar - met verzekerd transport en gratis offerte op maat.</p>
                 </div>
 
                 <div class="coverage__grid">
+                    <span class="coverage__tag coverage__tag--randstad">Den Haag</span>
                     <span class="coverage__tag coverage__tag--randstad">Amsterdam</span>
                     <span class="coverage__tag coverage__tag--randstad">Rotterdam</span>
-                    <span class="coverage__tag coverage__tag--randstad">Den Haag</span>
                     <span class="coverage__tag coverage__tag--randstad">Utrecht</span>
                     <span class="coverage__tag coverage__tag--randstad">Haarlem</span>
                     <span class="coverage__tag coverage__tag--randstad">Leiden</span>
@@ -514,29 +556,34 @@
                     <h2 id="gallery-heading">Verhuisbedrijf Oscar in Actie</h2>
                 </div>
 
-                <div class="gallery__grid">
-                    <div class="gallery__item">
-                        <img src="/images/photo-gallery-1.jpg" alt="Verhuiswagen van Verhuisbedrijf Oscar voor een woning in Amsterdam" width="600" height="500" loading="lazy">
-                        <div class="gallery__overlay">
-                            <div class="gallery__overlay-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                            </div>
+                <div class="gallery__marquee" role="region" aria-label="Fotogalerij Verhuisbedrijf Oscar">
+                    <div class="gallery__track" data-marquee-track>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/31-truck-street.webp" alt="Verhuiswagen van Verhuisbedrijf Oscar voor een woning in Den Haag" width="600" height="450" loading="lazy" decoding="async">
                         </div>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="/images/photo-gallery-2.jpg" alt="Team van Verhuisbedrijf Oscar bij het inpakken van een kantoor" width="600" height="250" loading="lazy">
-                        <div class="gallery__overlay">
-                            <div class="gallery__overlay-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                            </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/37-team-loading-truck.webp" alt="Team van Verhuisbedrijf Oscar laadt verhuiswagen in" width="600" height="450" loading="lazy" decoding="async">
                         </div>
-                    </div>
-                    <div class="gallery__item">
-                        <img src="/images/photo-gallery-3.jpg" alt="Verhuisteam met inpakmateriaal en verhuisdozen" width="600" height="250" loading="lazy">
-                        <div class="gallery__overlay">
-                            <div class="gallery__overlay-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                            </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/06-dozen-inladen-bus.webp" alt="Verhuisteam laadt dozen in de verhuisbus" width="600" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/11-vrachtwagen-laadklep-bank.webp" alt="Bank wordt met laadklep in de verhuiswagen geladen" width="600" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/16-piano-laadklep.webp" alt="Piano wordt zorgvuldig op de laadklep getild" width="600" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/13-koelkast-laadklep-tillen.webp" alt="Koelkast wordt met twee verhuizers op de laadklep geplaatst" width="600" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/35-living-room-wrap.webp" alt="Meubels in de woonkamer worden ingepakt met verhuisdekens" width="600" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/21-oscar-klant-handdruk.webp" alt="Oscar geeft tevreden klant een handdruk na de verhuizing" width="600" height="450" loading="lazy" decoding="async">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="/images/fotos/09-twee-bussen-ochtend.webp" alt="Twee verhuisbussen klaar voor vertrek in de vroege ochtend" width="600" height="450" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -561,7 +608,7 @@
                         </button>
                         <div class="faq__answer">
                             <div class="faq__answer-inner">
-                                <p>De kosten van een verhuizing hangen af van verschillende factoren, zoals de afstand, het volume van uw inboedel en of u extra diensten zoals inpakservice wenst. Voor een appartement met twee kamers in Amsterdam begint de prijs doorgaans rond de 450 euro. Wij maken altijd een offerte op maat, zodat u vooraf precies weet waar u aan toe bent.</p>
+                                <p>De verhuiskosten hangen af van verschillende factoren, zoals de afstand, het volume van uw inboedel en of u extra diensten zoals inpakservice wenst. Voor een appartement met twee kamers in Den Haag begint de prijs doorgaans rond de 450 euro. Wij maken altijd een gratis offerte op maat, zodat u vooraf precies weet waar u aan toe bent.</p>
                             </div>
                         </div>
                     </div>
@@ -617,7 +664,7 @@
                         </button>
                         <div class="faq__answer">
                             <div class="faq__answer-inner">
-                                <p>Ja, wij bieden spoedverhuizingen aan. Afhankelijk van de beschikbaarheid kunnen wij vaak al binnen een paar dagen, en soms zelfs dezelfde dag, uw verhuizing uitvoeren. Neem telefonisch contact met ons op via 020-8904567, dan bespreken wij direct de mogelijkheden.</p>
+                                <p>Ja, wij bieden spoedverhuizingen aan. Afhankelijk van de beschikbaarheid kunnen wij vaak al binnen een paar dagen, en soms zelfs dezelfde dag, uw verhuizing uitvoeren. Neem telefonisch contact met ons op via 06-18963271, dan bespreken wij direct de mogelijkheden.</p>
                             </div>
                         </div>
                     </div>
@@ -631,7 +678,7 @@
                         </button>
                         <div class="faq__answer">
                             <div class="faq__answer-inner">
-                                <p>Ons hoofdkantoor staat in Amsterdam, maar wij zijn actief in de hele Randstad. Dat omvat onder meer Rotterdam, Den Haag, Utrecht, Haarlem, Leiden, Almere en alle tussenliggende plaatsen. Voor verhuizingen buiten de Randstad kunt u ook bij ons terecht; neem contact op voor een offerte op maat.</p>
+                                <p>Ons hoofdkantoor staat in Den Haag, maar wij zijn actief in de hele Randstad. Dat omvat onder meer Rotterdam, Amsterdam, Utrecht, Haarlem, Leiden, Almere en alle tussenliggende plaatsen. Voor verhuizingen buiten de Randstad kunt u ook bij ons terecht; neem contact op voor een offerte op maat.</p>
                             </div>
                         </div>
                     </div>
@@ -651,19 +698,19 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             </div>
                             <div>
-                                <a href="tel:0208904567" class="cta-section__phone-number">020-8904567</a>
-                                <div class="cta-section__phone-label">Ma-Vr: 07:00 - 19:00 | Za: 08:00 - 17:00</div>
+                                <a href="tel:0618963271" class="cta-section__phone-number">06-18963271</a>
+                                <div class="cta-section__phone-label">Ma-Vr: 08:00 - 20:00 | Za: 09:00 - 18:00 | Zo: 10:00 - 16:00</div>
                             </div>
                         </div>
                     </div>
                     <div class="cta-section__right">
-                        <a href="#offerte-form" class="btn btn-primary btn-large">
+                        <a href="/contact#contact-form" class="btn btn-primary btn-large">
                             Plan Uw Verhuizing
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                         </a>
-                        <a href="tel:0208904567" class="btn btn-outline-white btn-large">
+                        <a href="tel:0618963271" class="btn btn-outline-white btn-large">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            Bel 020-8904567
+                            Bel 06-18963271
                         </a>
                     </div>
                 </div>
@@ -674,65 +721,79 @@
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
+        <div class="footer__accent" aria-hidden="true"></div>
+        <div class="footer__glow" aria-hidden="true"></div>
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <a href="/" class="footer__logo" aria-label="Verhuisbedrijf Oscar">
-                        <img src="/images/logo.png" alt="Verhuisbedrijf Oscar" width="160" height="50" style="height:50px;width:auto;object-fit:contain;">
+                    <a href="/" class="footer__logo" aria-label="Verhuisbedrijf Oscar - Home">
+                        <img src="/images/logo-horizontaal.png" alt="Verhuisbedrijf Oscar" width="180" height="48">
                     </a>
-                    <p class="footer__brand-text">Uw verhuizing, onze zorg. Al meer dan 15 jaar de betrouwbare verhuispartner voor particulieren en bedrijven in Amsterdam en de Randstad.</p>
+                    <p class="footer__brand-text">Uw verhuizing, onze zorg. Al meer dan 15 jaar de betrouwbare verhuispartner voor particulieren en bedrijven in Den Haag en de Randstad.</p>
                     <div class="footer__socials">
                         <a href="#" aria-label="Verhuisbedrijf Oscar op Facebook" class="footer__social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
                         <a href="#" aria-label="Verhuisbedrijf Oscar op Instagram" class="footer__social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </a>
                         <a href="#" aria-label="Verhuisbedrijf Oscar op LinkedIn" class="footer__social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                         </a>
                     </div>
+                    <dl class="footer__legal-ids">
+                        <div>
+                            <dt>KvK</dt>
+                            <dd>87654321</dd>
+                        </div>
+                        <div>
+                            <dt>BTW</dt>
+                            <dd>NL004567890B01</dd>
+                        </div>
+                    </dl>
                 </div>
 
                 <div class="footer__col">
-                    <h3 class="footer__column-title">Navigatie</h3>
-                    <nav class="footer__nav" aria-label="Footer navigatie">
-                        <a href="#home" class="footer__nav-link">Home</a>
-                        <a href="#diensten" class="footer__nav-link">Diensten</a>
-                        <a href="#werkwijze" class="footer__nav-link">Werkwijze</a>
-                        <a href="#over-ons" class="footer__nav-link">Over Ons</a>
-                        <a href="#contact" class="footer__nav-link">Contact</a>
+                    <h3 class="footer__column-title">Diensten</h3>
+                    <nav class="footer__nav" aria-label="Diensten navigatie">
+                        <a href="/particuliere-verhuizing" class="footer__nav-link">Particuliere Verhuizing</a>
+                        <a href="/zakelijke-verhuizing" class="footer__nav-link">Zakelijke Verhuizing</a>
+                        <a href="/spoedverhuizing" class="footer__nav-link">Spoedverhuizing</a>
+                        <a href="/prijs" class="footer__nav-link">Prijzen</a>
+                        <a href="/werkwijze" class="footer__nav-link">Werkwijze</a>
+                        <a href="/over-ons" class="footer__nav-link">Over Ons</a>
+                        <a href="/contact" class="footer__nav-link">Contact</a>
                     </nav>
                 </div>
 
                 <div class="footer__col">
                     <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item">
-                        <div class="footer__contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <address class="footer__contact">
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Binckhorstlaan+50+Den+Haag" target="_blank" rel="noopener noreferrer" class="footer__contact-item">
+                            <span class="footer__contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
+                            <span class="footer__contact-text">Binckhorstlaan 50<br>2516 BD Den Haag</span>
+                        </a>
+                        <a href="tel:0618963271" class="footer__contact-item">
+                            <span class="footer__contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
+                            <span class="footer__contact-text">06-18963271</span>
+                        </a>
+                        <a href="mailto:info@verhuisbedrijfoscar.nl" class="footer__contact-item">
+                            <span class="footer__contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <span class="footer__contact-text">info@verhuisbedrijfoscar.nl</span>
+                        </a>
+                        <div class="footer__contact-item footer__contact-item--static">
+                            <span class="footer__contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </span>
+                            <span class="footer__contact-text">Ma-Vr&nbsp;08:00-20:00<br>Za&nbsp;09:00-18:00<br>Zo&nbsp;10:00-16:00</span>
                         </div>
-                        <div class="footer__contact-text">Keizersgracht 112, 1015 AA Amsterdam</div>
-                    </div>
-                    <div class="footer__contact-item">
-                        <div class="footer__contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
-                        <div class="footer__contact-text"><a href="tel:0208904567">020-8904567</a></div>
-                    </div>
-                    <div class="footer__contact-item">
-                        <div class="footer__contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </div>
-                        <div class="footer__contact-text"><a href="mailto:info@verhuisbedrijfoscar.nl">info@verhuisbedrijfoscar.nl</a></div>
-                    </div>
-                    <div class="footer__contact-item">
-                        <div class="footer__contact-icon"></div>
-                        <div class="footer__contact-text">KvK: 87654321</div>
-                    </div>
-                    <div class="footer__contact-item">
-                        <div class="footer__contact-icon"></div>
-                        <div class="footer__contact-text">BTW: NL004567890B01</div>
-                    </div>
+                    </address>
                 </div>
 
                 <div class="footer__col">
@@ -745,18 +806,40 @@
                 </div>
             </div>
 
+            <div class="footer__trust">
+                <div class="footer__trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    <span>Bekend verhuisbedrijf</span>
+                </div>
+                <div class="footer__trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    <span>Verzekerd transport</span>
+                </div>
+                <div class="footer__trust-item footer__trust-item--rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span><strong>4.9</strong> Google Reviews</span>
+                </div>
+                <div class="footer__trust-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>15+ jaar ervaring</span>
+                </div>
+            </div>
+
             <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2024 Verhuisbedrijf Oscar. Alle rechten voorbehouden.</p>
+                <p class="footer__copyright">&copy; 2026 Verhuisbedrijf Oscar. Alle rechten voorbehouden.</p>
                 <div class="footer__bottom-links">
                     <a href="/privacy" class="footer__bottom-link">Privacy</a>
+                    <span class="footer__bottom-divider" aria-hidden="true">&middot;</span>
                     <a href="/voorwaarden" class="footer__bottom-link">Voorwaarden</a>
+                    <span class="footer__bottom-divider" aria-hidden="true">&middot;</span>
+                    <a href="/sitemap.xml" class="footer__bottom-link">Sitemap</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/31208904567" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Stuur ons een bericht via WhatsApp">
+    <a href="https://wa.me/31618963271" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Stuur ons een bericht via WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
         </svg>
@@ -765,11 +848,11 @@
     <!-- Mobile CTA Bar -->
     <div class="mobile-cta-bar" aria-label="Snelle acties">
         <div class="mobile-cta-bar__inner">
-            <a href="tel:0208904567" class="btn btn-primary">
+            <a href="tel:0618963271" class="btn btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Bellen
             </a>
-            <a href="#offerte-form" class="btn btn-secondary">
+            <a href="/contact#contact-form" class="btn btn-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                 Offerte
             </a>
@@ -784,21 +867,21 @@
         "@id": "https://verhuisbedrijfoscar.nl/#organization",
         "name": "Verhuisbedrijf Oscar",
         "alternateName": "Oscar Verhuizingen",
-        "description": "Professioneel verhuisbedrijf in Amsterdam en de Randstad. Particuliere en zakelijke verhuizingen, inpakservice en spoedverhuizingen.",
+        "description": "Professioneel verhuisbedrijf in Den Haag en de Randstad. Particuliere en zakelijke verhuizingen, inpakservice en spoedverhuizingen.",
         "url": "https://verhuisbedrijfoscar.nl",
-        "telephone": "+31208904567",
+        "telephone": "+31618963271",
         "email": "info@verhuisbedrijfoscar.nl",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Keizersgracht 112",
-            "addressLocality": "Amsterdam",
-            "postalCode": "1015 AA",
+            "streetAddress": "Binckhorstlaan 50",
+            "addressLocality": "Den Haag",
+            "postalCode": "2516 BD",
             "addressCountry": "NL"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 52.3676,
-            "longitude": 4.8937
+            "latitude": 52.0725,
+            "longitude": 4.3250
         },
         "image": "https://verhuisbedrijfoscar.nl/images/og-image.jpg",
         "priceRange": "$$",
@@ -806,14 +889,20 @@
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "07:00",
-                "closes": "19:00"
+                "opens": "08:00",
+                "closes": "20:00"
             },
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": "Saturday",
-                "opens": "08:00",
-                "closes": "17:00"
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "16:00"
             }
         ],
         "aggregateRating": {
@@ -824,9 +913,9 @@
             "worstRating": "1"
         },
         "areaServed": [
+            {"@type": "City", "name": "Den Haag"},
             {"@type": "City", "name": "Amsterdam"},
             {"@type": "City", "name": "Rotterdam"},
-            {"@type": "City", "name": "Den Haag"},
             {"@type": "City", "name": "Utrecht"},
             {"@type": "City", "name": "Haarlem"},
             {"@type": "City", "name": "Leiden"},
@@ -846,7 +935,7 @@
                 "name": "Wat kost een verhuizing met Verhuisbedrijf Oscar?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "De kosten van een verhuizing hangen af van verschillende factoren, zoals de afstand, het volume van uw inboedel en of u extra diensten zoals inpakservice wenst. Voor een appartement met twee kamers in Amsterdam begint de prijs doorgaans rond de 450 euro. Wij maken altijd een offerte op maat, zodat u vooraf precies weet waar u aan toe bent."
+                    "text": "De verhuiskosten hangen af van verschillende factoren, zoals de afstand, het volume van uw inboedel en of u extra diensten zoals inpakservice wenst. Voor een appartement met twee kamers in Den Haag begint de prijs doorgaans rond de 450 euro. Wij maken altijd een gratis offerte op maat, zodat u vooraf precies weet waar u aan toe bent."
                 }
             },
             {
@@ -878,7 +967,7 @@
                 "name": "Kan ik ook op korte termijn verhuizen?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, wij bieden spoedverhuizingen aan. Afhankelijk van de beschikbaarheid kunnen wij vaak al binnen een paar dagen, en soms zelfs dezelfde dag, uw verhuizing uitvoeren. Neem telefonisch contact met ons op via 020-8904567."
+                    "text": "Ja, wij bieden spoedverhuizingen aan. Afhankelijk van de beschikbaarheid kunnen wij vaak al binnen een paar dagen, en soms zelfs dezelfde dag, uw verhuizing uitvoeren. Neem telefonisch contact met ons op via 06-18963271."
                 }
             },
             {
@@ -886,29 +975,15 @@
                 "name": "Welke gebieden bedienen jullie?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ons hoofdkantoor staat in Amsterdam, maar wij zijn actief in de hele Randstad. Dat omvat onder meer Rotterdam, Den Haag, Utrecht, Haarlem, Leiden, Almere en alle tussenliggende plaatsen. Voor verhuizingen buiten de Randstad kunt u ook bij ons terecht."
+                    "text": "Ons hoofdkantoor staat in Den Haag, maar wij zijn actief in de hele Randstad. Dat omvat onder meer Rotterdam, Amsterdam, Utrecht, Haarlem, Leiden, Almere en alle tussenliggende plaatsen. Voor verhuizingen buiten de Randstad kunt u ook bij ons terecht."
                 }
             }
         ]
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://verhuisbedrijfoscar.nl"
-            }
-        ]
-    }
-    </script>
 
     <!-- Main JS -->
-    <script src="js/main.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </body>
 </html>
